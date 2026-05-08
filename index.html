@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construction & Infrastructure Experts</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --gold: #ffc107; --dark-bg: #1a1a1a; }
+        body { font-family: 'Poppins', sans-serif; background-color: #f8f9fa; }
+        
+        /* Premium Hero Section with Road/Dam Background */
+        .hero { 
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://images.unsplash.com/photo-1510133769061-63bc3440156d?q=80&w=2070'); /* Highway/Road Image */
+            background-size: cover;
+            background-position: center;
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        /* Infrastructure Section (Dams/Roads) */
+        .infra-section {
+            background: linear-gradient(rgba(26, 37, 47, 0.9), rgba(26, 37, 47, 0.9)), 
+                        url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=2070'); /* Dam/Civil Image */
+            background-attachment: fixed;
+            background-size: cover;
+            color: white;
+            padding: 100px 0;
+        }
+
+        .btn-gold { background-color: var(--gold); color: #000; font-weight: bold; border-radius: 0; padding: 12px 30px; border: none; transition: 0.3s; }
+        .btn-gold:hover { background-color: #e6ac00; transform: scale(1.05); }
+        
+        .service-box { background: white; border-bottom: 5px solid var(--gold); padding: 40px; transition: 0.3s; height: 100%; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        .service-box:hover { transform: translateY(-10px); background: #222; color: white; }
+
+        /* Floating WhatsApp */
+        .whatsapp-float { position: fixed; bottom: 30px; right: 30px; background: #25d366; color: white; width: 65px; height: 65px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 35px; z-index: 1000; box-shadow: 0 5px 20px rgba(0,0,0,0.3); text-decoration: none; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="#">
+                                                                <span class="text-warning">DASHTI</span> ENGNEERING WORKS        </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto fw-semibold">
+                    <li class="nav-item"><a class="nav-link" href="#services">Our Expertise</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#infra">Infrastructure</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-outline-warning ms-lg-3" href="#contact">Get Estimate</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <div class="col-lg-8">
+                                                                <h1 class="display-2 fw-bold">BUILDING THE FUTURE <br> OF PAKISTAN</h1>
+                <p class="fs-4 mb-4">Quality Construction, Roads, and Mega Infrastructure Projects.</p>
+                <a href="#contact" class="btn btn-gold">START YOUR PROJECT</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-5">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">WHAT WE DO</h2>
+                <div class="bg-warning mx-auto" style="height: 4px; width: 80px;"></div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="service-box">
+                        <i class="fas fa-road fa-3x mb-3 text-warning"></i>
+                        <h4>Road Construction</h4>
+                        <p>Highways, Asphalt roads, and complex bridge engineering.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-box">
+                        <i class="fas fa-water fa-3x mb-3 text-warning"></i>
+                        <h4>Dam & Irrigation</h4>
+                        <p>Specialized in water reservoirs and massive dam structures.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-box">
+                        <i class="fas fa-city fa-3x mb-3 text-warning"></i>
+                        <h4>Commercial Buildings</h4>
+                        <p>Plazas, Malls, and High-rise structural development.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="infra" class="infra-section text-center">
+        <div class="container">
+            <h2 class="display-4 fw-bold">WE ENGINEER THE IMPOSSIBLE</h2>
+            <p class="lead mb-5">From highways to mega-dams, our engineering team delivers excellence.</p>
+            <div class="row">
+                <div class="col-md-4"><h3>150+</h3><p>Projects Done</p></div>
+                <div class="col-md-4"><h3>20+</h3><p>Years Experience</p></div>
+                <div class="col-md-4"><h3>100%</h3><p>Reliability</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-5">
+                    <h2 class="fw-bold">GET IN TOUCH</h2>
+                    <p class="text-muted">Contact us for site visits and professional consulting.</p>
+                    
+                    <div class="mt-4">
+                                                                <p><i class="fas fa-map-marker-alt me-3 text-warning"></i> main office chungi no 10, sadiqabad punjab</p>
+                        
+                                                                <p><i class="fas fa-phone me-3 text-warning"></i> +92 300 1393541</p>
+                        
+                                                                <p><i class="fas fa-envelope me-3 text-warning"></i> naeemullah9110@gmail.com</p>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <form class="row g-3 bg-white p-4 shadow-sm border">
+                        <div class="col-md-6"><input type="text" class="form-control rounded-0" placeholder="DASHTI ENGNEERING WORKS"></div>
+                        <div class="col-md-6"><input type="email" class="form-control rounded-0" placeholder="naeemullah9110@gmail.com"></div>
+                        <div class="col-md-12"><textarea class="form-control rounded-0" rows="5" placeholder="Tell us about your project..."></textarea></div>
+                        <div class="col-md-12"><button type="submit" class="btn btn-dark w-100 rounded-0 py-3">SUBMIT REQUEST</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4 text-center">
+                                                                <p class="m-0">© 2026 YOUR COMPANY NAME. Built for Excellence.</p>
+    </footer>
+
+    <a href="https://wa.me/923001393541?text=Assalam-o-Alaikum, I need an estimate." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
